@@ -3,7 +3,7 @@ hexo.extend.injector.register('body_end',`
     <script type="module" crossorigin src="https://g.alicdn.com/aliyun-documentation/web-chatbot-ui/0.0.11/index.js"></script>
     <script>
       window.CHATBOT_CONFIG = {
-        endpoint: "/chat", // 可以替换为 https://{http://awhitemouseai-xvlbxbvgro.cn-hangzhou.fcapp.run}/chat
+        endpoint: "https://awhitemousedai-ytedrjwltd.cn-hangzhou.fcapp.run/chat", // 可以替换为 https://{your-fc-http-trigger-domain}/chat
         displayByDefault: false, // 默认不展示 AI 助手聊天框
         aiChatOptions: { // aiChatOptions 中 options 会传递 aiChat 组件，自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat
           conversationOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
