@@ -10,8 +10,8 @@ hexo.extend.injector.register('body_end',`
         aiChatOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
           conversationOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
             conversationStarters: [
+              {prompt: '你是谁？'},
               {prompt: '介绍一下本网站的博主吧'},
-              {prompt: '总结当前内容'},
             ]
           },
           displayOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#display-options
@@ -38,8 +38,7 @@ hexo.extend.injector.register('body_end',`
           * @param {string}  - 改写后的 Prompt
           */
           rewritePrompt(prompt) {
-            const pageUrl = window.location.href;
-            return "若用户提到“总结当前内容”，请参考以下页面："+pageUrl+prompt;
+            return prompt;
           }
         }
       };
